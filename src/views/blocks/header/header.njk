@@ -1,5 +1,20 @@
 <header class="header page__header">
 
-	<div class="header__inner layout__wrap"></div>
+	<div class="header__inner layout__wrap">
+		{% set inject = {
+			parentClass: "header__logo"
+		} %}
+		{% include "blocks/logo/logo.njk" %}
+
+		{% set inject = {
+			parentClass: "header__menu",
+			menuItemTpl: "menu-main-item",
+			listData: menu.menu_main,
+			menuBrakePoint: 994
+		} %}
+
+		{% include "blocks/menu/menu-main.njk" %}
+
+	</div>
 
 </header>

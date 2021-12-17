@@ -1,11 +1,10 @@
 .page {
 	&_theme {
-		font: 14px / 2.14 "Open Sans", sans-serif;
-		color: red;
-		background: #fff;
+		font: 16px / 2.14 "Montserrat", sans-serif;
+		color: $color_blue;
+		background: $color_pink;
 	}
 
 	&__footer {
-		background-color: white;
 	}
 }

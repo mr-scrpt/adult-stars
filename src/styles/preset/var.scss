@@ -1,5 +1,8 @@
 /* COLORS */
-
+$color_light: #fff;
+$color_pink: #ffa5a4;
+$color_blue: #3e3e58;
+$color_blue_light: lighten($color_blue, 6%);
 /* TIME*/
 
 $th: 0.25s;

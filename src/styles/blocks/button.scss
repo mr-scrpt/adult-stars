@@ -8,10 +8,10 @@
 	padding: 0;
 	user-select: none;
 	outline: 0;
-	background: yellow;
-	border: 1px solid red;
+	background: $color_blue;
+	border: 1px solid $color_blue;
 	white-space: nowrap;
-	border-radius: 3px;
+	border-radius: 5px;
 	text-decoration: none;
 	@include ts(background, border-color);
 
@@ -21,16 +21,16 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		vertical-align: top;
-		color: blue;
-		text-transform: lowercase;
+		color: $color_light;
+
 		font-weight: 600;
 		letter-spacing: 0.12em;
 	}
 
 	/* HOVER */
 	&:hover {
-		background: yellow;
-		border-color: yellow;
+		background: $color_blue_light;
+		border-color: $color_blue_light;
 		cursor: pointer;
 	}
 }
@@ -103,15 +103,15 @@
 
 /*L - Начало*/
 .button_size_l {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 22px;
 }
 .button_size_l .button__text {
-	margin: 4.5px 35px;
+	margin: 12px 75px;
 
-	@include bp994-block() {
+	/*@include bp994-block() {
 		margin: 10px 25px;
-	}
+	}*/
 }
 /*L - КОНЕЦ*/
 

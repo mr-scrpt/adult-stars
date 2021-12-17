@@ -1,5 +1,5 @@
 /* Библиотеки */
-@import "./lib/smartgrid.scss";
+@import "./lib/smart-grid.scss";
 
 /* INIT */
 @import "./preset/reset.scss";
@@ -15,6 +15,7 @@
 @import "./fundamental/footer.scss";
 
 /* Блоки */
+@import "./blocks/block-s.scss";
 @import "./blocks/button.scss";
 @import "./blocks/input.scss";
 @import "./blocks/textarea.scss";
@@ -31,6 +32,9 @@
 @import "./logo.scss";
 
 /* Навигация */
+@import "./custom/menu-main.scss";
+@import "./custom/banner.scss";
+
 * {
 	box-sizing: border-box;
 }

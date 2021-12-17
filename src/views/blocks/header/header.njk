@@ -1,20 +1,59 @@
 <header class="header page__header">
-
-	<div class="header__inner layout__wrap">
-		{% set inject = {
+	<div class="header__line">
+		<div class="layout__wrap header__row">
+			{% set inject = {
 			parentClass: "header__logo"
-		} %}
-		{% include "blocks/logo/logo.njk" %}
+			} %}
+			{% include "blocks/logo/logo.njk" %}
 
-		{% set inject = {
+			{% set inject = {
 			parentClass: "header__menu",
 			menuItemTpl: "menu-main-item",
 			listData: menu.menu_main,
 			menuBrakePoint: 994
-		} %}
+			} %}
 
-		{% include "blocks/menu/menu-main.njk" %}
+			{% include "blocks/menu/menu-main.njk" %}
+		</div>
 
+	</div>
+	<div class="header__banner layout__flat banner">
+		<div class="banner__inner layout__wrap">
+
+			<div class="banner__imgbox">
+				<img
+					src="./img/banner_img.png"
+					alt=""
+					class="banner__img img"
+				>
+			</div>
+
+			<div class="banner__content">
+				<div class="banner__logo">
+					<div class="banner__img-logobox">
+						<img
+							src="./img/banner_logo.png"
+							alt=""
+							class="banner__img-logo img"
+						>
+						<div class="banner__text-img">агентство</div>
+					</div>
+
+					<div class="banner__text">ADULT STARS</div>
+				</div>
+
+				<div class="banner__about">Мы продюсируем моделей на OnlyFans и помогаем им зарабатывать от $10 000
+					ежемесячно</div>
+				<div class="banner__buttonbox">
+					<a
+						href="#"
+						class="button button_size_l"
+					>
+						<div class="button__text">Узнать детали</div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </header>

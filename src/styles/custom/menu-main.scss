@@ -1,0 +1,31 @@
+.menu-main {
+	&__inner {
+		display: flex;
+	}
+
+	&__controller {
+	}
+
+	&__controller-icon {
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item {
+		color: $color_blue;
+		margin-left: 5px;
+		margin-right: 5px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 16px;
+		@include bp1280-block() {
+			margin-left: 15px;
+			margin-right: 15px;
+			font-weight: 700;
+		}
+	}
+}

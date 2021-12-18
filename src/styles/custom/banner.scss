@@ -5,6 +5,7 @@
 		@include bp994-block() {
 			flex-direction: row;
 			align-items: center;
+			flex-wrap: wrap;
 		}
 	}
 	&__imgbox {
@@ -12,7 +13,7 @@
 		padding-bottom: 15px;
 		@include bp994-block() {
 			order: 1;
-
+			width: calc(50% + 200px);
 			padding-bottom: 50px;
 		}
 	}
@@ -23,10 +24,18 @@
 		align-items: center;
 		padding-left: 15px;
 		padding-right: 15px;
+		margin-bottom: 100px;
 		@include bp994-block() {
 			order: 0;
+			width: calc(50% - 100px);
 			align-items: flex-start;
+			margin-right: -100px;
+			margin-bottom: 0;
 		}
+	}
+	&__models {
+		order: 2;
+		width: 100%;
 	}
 
 	&__logo {
@@ -96,5 +105,7 @@
 	&__buttonbox {
 		display: flex;
 		justify-content: center;
+	}
+	&__models {
 	}
 }

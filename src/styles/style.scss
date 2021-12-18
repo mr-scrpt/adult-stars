@@ -1,5 +1,6 @@
 /* Библиотеки */
 @import "./lib/smart-grid.scss";
+@import "./lib/swiper.scss";
 
 /* INIT */
 @import "./preset/reset.scss";
@@ -34,6 +35,7 @@
 /* Навигация */
 @import "./custom/menu-main.scss";
 @import "./custom/banner.scss";
+@import "./custom/models.scss";
 
 * {
 	box-sizing: border-box;

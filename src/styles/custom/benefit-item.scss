@@ -1,0 +1,45 @@
+.benefit-item {
+	&__inner {
+		display: flex;
+	}
+
+	&__imgbox {
+		width: 140px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include bp994-block() {
+			width: 300px;
+		}
+	}
+
+	&__img {
+	}
+
+	&__content {
+		width: calc(100% - 140px);
+		@include bp994-block() {
+			width: calc(100% - 300px);
+		}
+	}
+
+	&__name {
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		@include bp994-block() {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 16px;
+		@include bp994-block() {
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
+}

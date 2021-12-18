@@ -4,8 +4,21 @@
 
 	{% include "blocks/header/header.njk" %}
 
-	{% set inject = {} %}
+	{% set inject = {
+		title: "Преимущества работы с нами",
+		pageSectionClass: "page__benefits"
+	} %}
 
+	{% include "blocks/sections/benefits.njk" %}
+
+	{% set inject = {
+		title: "Результаты работы с нами",
+		pageSectionClass: "page__result"
+	} %}
+
+	{% include "blocks/sections/result.njk" %}
+
+	{% set inject = {} %}
 	{% include "blocks/footer/footer.njk" %}
 
 {% endblock %}

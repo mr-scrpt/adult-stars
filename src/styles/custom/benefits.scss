@@ -1,0 +1,14 @@
+.benefits {
+	&__inner {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+	}
+}

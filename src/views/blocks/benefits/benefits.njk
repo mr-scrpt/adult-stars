@@ -1,0 +1,9 @@
+<div class="benefits">
+	<div class="benefits__inner">
+		<div class="benefits__list">
+			{% for item in benefits.benefits_list %}
+				{% include "blocks/benefits/benefit-item.njk" %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+.section {
+	&__title {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+		@include bp994-block() {
+			margin-bottom: 60px;
+		}
+	}
+	&__inner {
+		position: relative;
+		z-index: 1;
+		height: 100%;
+	}
+}

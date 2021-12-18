@@ -1,0 +1,38 @@
+<div class="result">
+	<div class="result__inner">
+		<div class="result__slider slider">
+			<div class="swiper result__slider-box">
+
+				<div class="result__list swiper-wrapper">
+					{% for item in[1, 2, 3] %}
+					<div class="result__item swiper-slide">
+						<img
+							src="./img/result/{{item}}.jpg"
+							alt=""
+							class="result__img img"
+						>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+
+
+
+			<div class="swiper-pagination result__pagination"></div>
+		</div>
+		<div class="result__stat">
+			<div class="result__stat-list">
+				{% for item in[4, 5, 6] %}
+				<div class="result__stat-item">
+					<img
+						src="./img/result/{{item}}.jpg"
+						alt=""
+						class="result__stat-item-img"
+					>
+				</div>
+				{% endfor %}
+			</div>
+
+		</div>
+	</div>
+</div>

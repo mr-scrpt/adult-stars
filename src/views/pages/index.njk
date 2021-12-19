@@ -5,6 +5,13 @@
 	{% include "blocks/header/header.njk" %}
 
 	{% set inject = {
+		pageSectionClass: "page__banner",
+		pageDecoClass: "deco__section-spot"
+	} %}
+
+	{% include "blocks/sections/banner.njk" %}
+
+	{% set inject = {
 		title: "Преимущества работы с нами",
 		pageSectionClass: "page__benefits"
 	} %}

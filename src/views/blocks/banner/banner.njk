@@ -1,0 +1,55 @@
+<div class="banner">
+	<div class="banner__inner">
+
+		<div class="banner__imgbox">
+			<img
+					src="./img/banner_img.png"
+					alt=""
+					class="banner__img img"
+				>
+		</div>
+
+		<div class="banner__content">
+			<div class="banner__logo">
+				<div class="banner__img-logobox">
+					<img
+							src="./img/banner_logo.png"
+							alt=""
+							class="banner__img-logo img"
+						>
+					<div class="banner__text-img">агентство</div>
+				</div>
+
+				<div class="banner__text">ADULT STARS</div>
+			</div>
+
+			<div class="banner__about">Мы продюсируем моделей на OnlyFans и помогаем им зарабатывать от $10 000
+					ежемесячно</div>
+			<div class="banner__buttonbox">
+				<a
+						href="#"
+						class="button button_size_l"
+					>
+					<div class="button__text">Узнать детали</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="banner__models models slider">
+
+			<div class="models__inner">
+				<div class="models__title">Наши модели</div>
+				<div class="models__text">Некоторые из наших моделей, которые зарабатывают сейчас от $10 000 тысяч
+						долларов ежемесячно.</div>
+				<div class="slider swiper models__slider">
+					<div class="models__list swiper-wrapper">
+						{% for item in models.models_list %}
+							{% include "blocks/models/models-item.njk" %}
+						{% endfor %}
+					</div>
+				</div>
+				<div class="swiper-pagination models__pagination"></div>
+			</div>
+		</div>
+	</div>
+</div>

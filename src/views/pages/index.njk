@@ -33,6 +33,14 @@
 
 	{% include "blocks/sections/callback.njk" %}
 
+	{% set inject = {
+		title: "Вы делаете контент - мы делаем результат!",
+		pageSectionClass: "page__slogan",
+		pageDecoClass: "deco__section-spot"
+	} %}
+
+	{% include "blocks/sections/slogan.njk" %}
+
 	{% set inject = {} %}
 	{% include "blocks/footer/footer.njk" %}
 

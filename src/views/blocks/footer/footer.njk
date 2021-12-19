@@ -1,3 +1,21 @@
 <footer class="footer page__footer">
-	<div class="footer__inner"></div>
+	<div class="footer__inner">
+		{% set inject = {
+			parentClass: "footer__logo"
+		} %}
+		{% include "blocks/logo/logo-footer.njk" %}
+
+		{% include "blocks/menu/menu-footer.njk" %}
+		<div class="footer__social social">
+			<div class="social__inner">
+				<div class="social__title">Напишите нам</div>
+				<div class="social__list">
+					<div class="social__item">
+						<div class="icon icon_tg"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 </footer>

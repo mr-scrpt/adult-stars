@@ -1,0 +1,7 @@
+<div class="menu-footer footer__menu">
+	<nav class="menu-footer__inner">
+		{% for item in menu.menu_main %}
+			<a href="{{item.href}}" class="menu-footer__item link">{{item.name}}</a>
+		{% endfor %}
+	</nav>
+</div>

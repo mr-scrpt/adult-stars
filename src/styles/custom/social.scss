@@ -1,0 +1,25 @@
+.social {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		color: $color_light;
+		font-size: 25px;
+		line-height: 32px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		@include bp994-block() {
+			justify-content: flex-start;
+		}
+	}
+
+	&__item {
+	}
+}

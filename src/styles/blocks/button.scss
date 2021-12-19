@@ -24,7 +24,7 @@
 		color: $color_light;
 
 		font-weight: 600;
-		letter-spacing: 0.12em;
+		/*letter-spacing: 0.12em;*/
 	}
 
 	/* HOVER */
@@ -53,10 +53,11 @@
 /*Виды кнопок*/
 .button.button_view {
 	&_secondary {
+		background-color: $color_light;
+		border-color: $color_light;
 		& .button__text {
-			text-transform: none;
-			letter-spacing: normal;
-			font-weight: 400;
+			color: $color_blue;
+			font-weight: 700;
 		}
 	}
 }
@@ -122,10 +123,10 @@
 }
 
 .button_size_xl .button__text {
-	margin: 5.5px 55px;
+	margin: 22px 55px;
 
 	@include bp994-block() {
-		margin: 12px 90px;
+		/*margin: 18px 75px;*/
 	}
 }
 /*XL - КОНЕЦ*/

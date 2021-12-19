@@ -18,6 +18,13 @@
 
 	{% include "blocks/sections/result.njk" %}
 
+	{% set inject = {
+		title: "",
+		pageSectionClass: "page__callback"
+	} %}
+
+	{% include "blocks/sections/callback.njk" %}
+
 	{% set inject = {} %}
 	{% include "blocks/footer/footer.njk" %}
 

@@ -1,0 +1,25 @@
+.form {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		width: 100%;
+		color: $color_light;
+		font-size: 30px;
+		line-height: 45px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	&__row {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	&__input {
+		width: 100%;
+	}
+}

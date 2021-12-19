@@ -5,7 +5,7 @@
 		background: $color_pink;
 	}
 
-	&__result {
+	/*&__result {
 		background: url("../img/banner_bg.png") #fff no-repeat;
 		background-size: cover;
 		position: relative;
@@ -19,7 +19,7 @@
 			height: 150px;
 			background: url("../img/deco/deco_spot_header_top_mob.png")
 				no-repeat;
-			/*background-position: 0 50%;*/
+
 			background-size: cover;
 			@include bp768-block() {
 				background: url("../img/deco/deco_spot_header_top.png")
@@ -38,7 +38,7 @@
 			height: 150px;
 			background: url("../img/deco/deco_spot_header_top_mob.png")
 				no-repeat;
-			/*background-position: 0 50%;*/
+
 			background-size: cover;
 			@include bp768-block() {
 				background: url("../img/deco/deco_spot_header_top.png")
@@ -47,7 +47,7 @@
 				background-size: contain;
 			}
 		}
-	}
+	}*/
 
 	&__footer {
 	}

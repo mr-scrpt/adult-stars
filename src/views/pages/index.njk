@@ -13,7 +13,8 @@
 
 	{% set inject = {
 		title: "Преимущества работы с нами",
-		pageSectionClass: "page__benefits"
+		pageSectionClass: "page__benefits",
+		anchor: "benefits"
 	} %}
 
 	{% include "blocks/sections/benefits.njk" %}
@@ -21,14 +22,16 @@
 	{% set inject = {
 		title: "Результаты работы с нами",
 		pageSectionClass: "page__result",
-		pageDecoClass: "deco__section-spot"
+		pageDecoClass: "deco__section-spot",
+		anchor: "result"
 	} %}
 
 	{% include "blocks/sections/result.njk" %}
 
 	{% set inject = {
 		title: "",
-		pageSectionClass: "page__callback"
+		pageSectionClass: "page__callback",
+		anchor: "callback"
 	} %}
 
 	{% include "blocks/sections/callback.njk" %}

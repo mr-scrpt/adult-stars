@@ -9,6 +9,8 @@
 			<div class="section__title title" {{idline}}>
 				<div class="title__main">{{inject.title}}</div>
 			</div>
+			{%else%}
+			<div class="anchor" {{idline}}></div>
 		{% endif %}
 
 		{% block content %}{% endblock %}

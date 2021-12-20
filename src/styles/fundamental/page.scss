@@ -41,7 +41,9 @@
 			display: flex;
 		}
 	}
-
+	& .swiper-pagination-bullet-active {
+		background-color: $color_pink;
+	}
 	&__footer {
 	}
 }

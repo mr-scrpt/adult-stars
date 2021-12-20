@@ -2,25 +2,25 @@
 	"menu_main": [
 		{
 			"name": "Наши модели",
-			"href": "#models"
+			"target": "models"
 		},
 		{
 			"name": "Преимущества работы с нами",
-			"href": "#benefits"
+			"target": "benefits"
 		},
 		{
 			"name": "Результаты работы",
-			"href": "#result"
+			"target": "result"
 		},
 
 		{
 			"name": "Оставить заявку",
-			"href": "#callback"
+			"target": "callback"
 		},
 
 		{
 			"name": "Контакты",
-			"href": "#contactUs"
+			"target": "contactUs"
 		}
 	]
 }

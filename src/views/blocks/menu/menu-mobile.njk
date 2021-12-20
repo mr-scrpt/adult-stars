@@ -1,0 +1,16 @@
+<nav
+	class="menu-mobile page__menu-mobile"
+>
+	<div class="menu-mobile__inner">
+		<div class="menu-mobile__closebox">
+			<span class="icon icon_close block-s__close menu-mobile__close"></span>
+		</div>
+
+		<div class="menu-mobile__list">
+			{% for item in menu.menu_main %}
+				{% include "blocks/menu/menu-mobile-item.njk" %}
+			{% endfor %}
+		</div>
+
+	</div>
+</nav>

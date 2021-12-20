@@ -26,7 +26,14 @@
 
 .icon.icon_burger {
 	mask-image: url("../img/icon/icon_burger.svg");
-	background-color: red;
-	width: 31px;
-	height: 21px;
+	background-color: $color_blue;
+	width: 42px;
+	height: 30px;
+}
+
+.icon.icon_close {
+	mask-image: url("../img/icon/icon_close.svg");
+	background-color: $color_light;
+	width: 60px;
+	height: 60px;
 }

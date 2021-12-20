@@ -1,0 +1,36 @@
+.menu-mobile {
+	&__inner {
+		position: relative;
+		z-index: 210;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/*align-items: center;*/
+		background-color: $color_pink;
+	}
+
+	&__list {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item {
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 32px;
+		padding: 5px 0;
+		margin: 7px 0;
+	}
+	&__item-link {
+		color: $color_light;
+	}
+
+	&__closebox {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+}

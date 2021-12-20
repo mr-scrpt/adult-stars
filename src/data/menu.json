@@ -16,6 +16,11 @@
 		{
 			"name": "Оставить заявку",
 			"href": "#callback"
+		},
+
+		{
+			"name": "Контакты",
+			"href": "#contactUs"
 		}
 	]
 }

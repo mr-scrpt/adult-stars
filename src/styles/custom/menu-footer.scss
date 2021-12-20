@@ -5,7 +5,7 @@
 		align-items: center;
 
 		@include bp994-block() {
-			max-height: 150px;
+			max-height: 130px;
 			align-items: flex-start;
 			flex-wrap: wrap;
 		}

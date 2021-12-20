@@ -2,6 +2,8 @@
 
 {% block main %}
 
+	{% include "blocks/menu/menu-mobile.njk" %}
+
 	{% include "blocks/header/header.njk" %}
 
 	{% set inject = {
@@ -44,7 +46,9 @@
 
 	{% include "blocks/sections/slogan.njk" %}
 
-	{% set inject = {} %}
+	{% set inject = {
+		anchor: "contactUs"
+	} %}
 	{% include "blocks/sections/footer.njk" %}
 
 {% endblock %}

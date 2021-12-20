@@ -3,51 +3,44 @@
 		font: 16px / 2.14 "Montserrat", sans-serif;
 		color: $color_blue;
 		background: $color_pink;
+		position: relative;
 	}
 
-	/*&__result {
-		background: url("../img/banner_bg.png") #fff no-repeat;
-		background-size: cover;
-		position: relative;
-		padding-top: 120px;
-		padding-bottom: 60px;
-		&:before {
-			top: -40px;
-			position: absolute;
-			content: "";
-			width: 100%;
-			height: 150px;
-			background: url("../img/deco/deco_spot_header_top_mob.png")
-				no-repeat;
+	&_menu_open {
+		overflow: hidden;
+		/*height: 100%;*/
+		.page__menu-mobile_open {
+			animation: slideMenuOpen 1s forwards;
+		}
+	}
+	&_menu_close {
+		.page__menu-mobile_close {
+			animation: slideMenuClose 1s forwards;
+		}
+	}
 
-			background-size: cover;
-			@include bp768-block() {
-				background: url("../img/deco/deco_spot_header_top.png")
-					no-repeat;
-				top: 0;
-				background-size: contain;
-			}
+	&__menu-mobile {
+		/*display: none;*/
+		position: fixed;
+		z-index: 30;
+		overflow: hidden;
+		height: 100vh;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: translateX(-99999px);
+
+		/*	width: 100vw;*/
+		//background-color: #fff;
+		@include bp768-block() {
+			display: none;
 		}
 
-		&:after {
-			transform: rotate(180deg);
-			bottom: -40px;
-			position: absolute;
-			content: "";
-			width: 100%;
-			height: 150px;
-			background: url("../img/deco/deco_spot_header_top_mob.png")
-				no-repeat;
-
-			background-size: cover;
-			@include bp768-block() {
-				background: url("../img/deco/deco_spot_header_top.png")
-					no-repeat;
-				bottom: 0;
-				background-size: contain;
-			}
+		&_open {
+			display: flex;
 		}
-	}*/
+	}
 
 	&__footer {
 	}

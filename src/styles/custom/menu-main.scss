@@ -4,15 +4,25 @@
 	}
 
 	&__controller {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+		@include bp768-block() {
+			display: none;
+		}
 	}
 
 	&__controller-icon {
 	}
 
 	&__list {
-		display: flex;
+		display: none;
+
 		justify-content: center;
 		align-items: center;
+		@include bp768-block() {
+			display: flex;
+		}
 	}
 
 	&__item {
